@@ -3,6 +3,8 @@ from llama_cpp import Llama
 
 model_path = os.environ.get("MODEL_PATH")
 
+print(model_path)
+
 if not os.path.isfile(model_path):
     print(
         f"Model file '{model_path}' not found. Please download it before running this script."
